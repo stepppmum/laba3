@@ -3,25 +3,25 @@ package things;
 import characters.Person;
 
 public abstract class Thing{
-    private String Name;
-    private String Material;
+    private String name;
+    private String material;
 
     public final void setName(String name){
-        this.Name = name;
+        this.name = name;
     }
     public final String getName(){
-        return Name;
+        return name;
     }
     public final void setMaterial(String material){
-        this.Material = material;
+        this.material = material;
     }
     public final String getMaterial(){
-        return Material;
+        return material;
     }
 
 
     @Override
     public String toString(){
-        return this.Name;
+        return this.name;
     }
 }
